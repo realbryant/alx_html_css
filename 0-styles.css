@@ -1,0 +1,91 @@
+/* 0-styles.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565;
+  --text-color: #fff;
+  --bg-color: #000;
+  --max-width: 1000px;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Header layout */
+.site-header {
+  background-image: url(whastapp.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  height: 100vh;
+  width: 100%;
+  }
+
+
+
+/* Centering content */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero text */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
