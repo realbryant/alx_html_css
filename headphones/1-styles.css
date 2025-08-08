@@ -1,0 +1,192 @@
+/* main style */
+html{
+    scroll-behavior: smooth;
+}
+
+
+.holbertonicon{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    line-height: 0;
+}
+.holbertonsvg{
+    color: #FF6565;
+    font-size: 100px;
+    line-height: 0;
+}
+.holbertonsocials{
+    display: inline-block;    
+    color: white;
+    font-size: 32px;
+    line-height: 0;
+    padding-left: 16px;
+}
+
+
+
+
+body{
+    width: 100%;
+    font-family: sans-serif ;
+    color: #071629;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    /* height: 100vh; */
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+h2{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+h3{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px 32px 20px;
+}
+p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+}
+.description{
+    /* min-width: 300px; */
+    max-width: 635px;
+    padding: 60px 20px 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    line-height: 26px;
+}
+.button{
+    background-color: #FF6565;
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button:hover {
+  background-color: #071629; /* or any darker color */
+  color: #fff;
+  transform: scale(1.05);
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+
+/* animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+/* header */
+header{
+    background-image: url(headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 300px;
+}
+
+header .container{
+    padding-top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: auto;
+    height: 32px;
+}
+.navlinks{
+    display: flex;
+}
+
+li a{
+    padding-left: 32px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+li a:hover{
+    color: #FF6565;
+}
+
+
+
+
+/* what we do */
+.whatwedo-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.whatwedo-subcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.whatwedo-item{
+    width: 200px;
+    padding: 100px 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.whatwedo-item h3{
+    padding: 32px 0 20px 0;
+}
